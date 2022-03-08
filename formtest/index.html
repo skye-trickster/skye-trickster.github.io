@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Form: E-mails</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+        <!--link href="style.css" rel="stylesheet" type="text/css" /-->
+    </head>
+
+    <style>
+        fieldset {
+            margin-bottom: 0.15em;
+        }
+        fieldset div {
+            margin-bottom: 0.25em;
+        }
+        .textarea label {
+            display: block;
+        }
+        .textarea textarea {
+            width: 100%;
+        }
+
+    </style>
+    <body>
+        <header>
+            <h1>E-Mail Form</h1>
+        </header>
+        
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Basic Information</legend>
+                <div>
+                    <label for="name">Name: </label>
+                    <input class="field" id="name" type="text" autofocus="on" name="name" required placeholder="Your name">
+                </div>
+
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input class="field" id="e-mail" type="email" name="email" required placeholder="abc@domain.com">
+                </div>
+                
+                <div class="textarea">
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Optional Information</legend>
+
+                <label for="color">Favorite Color: </label>
+                <select id="color" name="color">
+                    <option value="red">Red</option>
+                </select>
+
+            </fieldset>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+       </form>
+    </body>
+</html>
