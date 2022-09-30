@@ -1,0 +1,35 @@
+:root {
+    --background-color: #DBE9EE;
+    --text-color: black;
+    --text-font: Arial, Helvetica, sans-serif;
+
+    --header-background-color: #166088;
+    --header-text-color: white;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--main-color);
+    font-family: var(--text-font);
+    font-size: 1em;
+}
+
+header {
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    text-align: center;
+    height: 5em;
+}
+
+header h1, header h3, footer h3 {
+    margin: 0;
+    padding-top: 0.1em;
+} 
+
+footer {
+    background-color: var(--header-background-color);
+    text-align: center;
+    color: var(--header-text-color);
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
