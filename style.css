@@ -21,6 +21,7 @@ header {
     height: 5em;
 }
 
+/* To correct the spacing for h1s and prevent from having an extra gap.*/
 header h1, header h3, footer h3 {
     margin: 0;
     padding-top: 0.1em;
@@ -32,4 +33,21 @@ footer {
     color: var(--header-text-color);
     padding-bottom: 0.5em;
     padding-top: 0.5em;
+}
+
+a:link {
+    color: blue;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+a:visited {
+    color: red;
+}
+
+a:visited:hover {
+    color: black;
 }
